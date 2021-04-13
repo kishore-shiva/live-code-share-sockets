@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="http://192.168.1.32:9001/socket.io/socket.io.js"></script>
+    <script defer src="./script.js"></script>
+
+    <link rel="stylesheet" href="./node_modules/codemirror/lib/codemirror.css">
+  <script src="./node_modules/codemirror/lib/codemirror.js"></script>
+
+  <!-- languages:  -->
+  <script src="./node_modules/codemirror/mode/python/python.js"></script>
+  <script src="./node_modules/codemirror/mode/clike/clike.js"></script>
+
+  <link rel="stylesheet" href="./node_modules//codemirror/theme/night.css">
+
+  <link rel="stylesheet" href="./codemirror-5.60.0/theme/night.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.42.2/mode/clike/clike.min.js"></script>
+  <link rel="stylesheet" href="./stylescss/styles.css">
+    
+    <!-- highlight js links-->
+    <link rel="stylesheet" href="styles/atelier-plateau-dark.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/go.min.js"></script>
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Code Share</h1>
+    <h2 id="roomname"></h2>
+
+    <!-- Code Editor -->
+    <div class="box">
+        <select name="cars" id="cars" onchange="getSelectValue();">
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+          <option value="C++">C++</option>
+          <option value="C">C</option>
+        </select>
+      </div>
+      
+      <div id="code-editor"></div>
+        
+</body>
+</html>
